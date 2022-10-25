@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="scripts.js"></script>
+
   
     <title>Chefe Milionário – De R$300 a R$1000 por semana!</title>
 </head>
@@ -34,7 +34,7 @@
         </div>
         <div class="vagas" >
         <h1>RESTAM POUCAS VAGAS!</h1>
-        <h2>7</h2>
+        <div  class="counter"></div>
         <h3>GARANTA A SUA AGORA MESMO!</h3>
         <div class="box-pulse-vagas">
             <a href="#" class="botao-pulse-vagas">GARANTIR MINHA VAGA AGORA!</a></div>
@@ -49,7 +49,32 @@
     </div>
   
 </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+<script>
+
+function countTo(){
+    let from = 60;
+    let to = 7;
+    let step = to > from ? 1 : -1;
+    let interval = 20;
+
+    if(from == to){
+        document.querySelector(".counter").textContent = from;
+        return;
+    }
+
+    let counter = setInterval(function(){
+        from += step;
+        document.querySelector(".counter").textContent = from;
+
+        if(from == to){
+            clearInterval(counter);
+        }
+    }, interval);
+}
+countTo()
+
+</script>
 </html>

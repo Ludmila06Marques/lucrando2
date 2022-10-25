@@ -16,6 +16,7 @@ h1 {
 .container img{
 margin-top: 50px;
 max-width: 60%;
+margin-bottom: 15px;
 }
 
 .navbarr{
@@ -110,6 +111,7 @@ background-color: violet;
 
 }
 .footer{
+  border-top: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,7 +153,8 @@ background-color: black;
   padding: 20px 30px;
   color: #fff;
   background-color: #28CC3E;
-  box-shadow: 0px 0px 10px 4px rgb(40 204 62 / 52%);;
+  box-shadow: 0px 0px 10px 4px rgb(40 204 62 / 52%);
+  
   border-radius:10px; 
   -webkit-animation: pulse 1s ease infinite;
   -moz-animation: pulse 1s ease infinite;
@@ -235,10 +238,12 @@ background-color: black;
   100% {transform: scale(1);}
 }
 .vagas{
+  background-image: url("https://i.pinimg.com/474x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg");
+  text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
-flex-direction:  column;
+    flex-direction:  column;
     width: 87%;
     margin-top: 15px;
     background-color: lightgoldenrodyellow;
@@ -291,7 +296,7 @@ flex-direction:  column;
   padding: 20px 30px;
   color: #fff;
   background-color: #28CC3E;
-  box-shadow: 0px 0px 10px 4px rgb(40 204 62 / 52%);;
+  box-shadow: 0px 0px 10px 4px rgb(40 204 62 / 52%);
   border-radius:10px; 
   -webkit-animation: pulse 1s ease infinite;
   -moz-animation: pulse 1s ease infinite;
@@ -300,10 +305,16 @@ flex-direction:  column;
   animation: pulse 1s ease infinite;
   font-size: 17px;
 }
+.counter {
+  width: auto;
+  font-size: 60px;
+  height: auto;
+  color: #FCC414;
+}
 
 
 /*Botão Pulsa*/
-@media(max-width: 425px) {
+@media(max-width: 525px) {
     .navbarr h1{
      font-size: 15px;
      padding-bottom: 5px;
@@ -311,9 +322,10 @@ flex-direction:  column;
   .title{
     font-size: 20px;
   }
+
     .under h1{
         font-size: 13px;
-        margin-bottom: 100px;
+        margin-bottom: 15px;
        
     }
     .botao-pulse-vagas{
@@ -323,6 +335,9 @@ flex-direction:  column;
       width: 90%;
       height: 175px;
     }
+    .vagas{
+      width: 67%;
+    }
     .under .icon ion-icon{
         font-size: 10px;
         margin: 0;
@@ -331,8 +346,25 @@ flex-direction:  column;
     .box-pulse-vagas {
         width: 80%;
     }
+    .footer{
+      height: 60px;
+    
+  }
     .footer p{
         font-size: 10px;
+        margin: 5px;
     
+    }
+    .vagas h1 { 
+      font-size: 25px;
+    }
+    .vagas h2 { 
+      font-size: 25px;
+    }
+    .vagas h3{ 
+      font-size: 25px;
+    }
+    .counter{
+      font-size: 55px;
     }
    }
