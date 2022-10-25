@@ -14,11 +14,10 @@ h1 {
     font-size: 35px;
 }
 .container img{
-margin-top: 50px;
-max-width: 60%;
-margin-bottom: 15px;
-}
 
+  max-width: 60%;
+  }
+  
 .navbarr{
 text-align: center;
 width: 100%;
@@ -112,20 +111,20 @@ background-color: violet;
 }
 .footer{
   border-top: 1px solid red;
+padding-bottom: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 width: 100%;
-height: 150px;
+height: auto;
 background-color: black;
 }
 .footer p{
-    margin: 10px;
+  
     font-size: 20px;
     color: #ffffff;
 }
-
 /*Botão Pulsa*/
 .box-pulse { 
 
@@ -246,6 +245,7 @@ background-color: black;
     flex-direction:  column;
     width: 87%;
     margin-top: 15px;
+    margin-bottom: 30px;
     background-color: lightgoldenrodyellow;
    padding: 20px;
     border-radius: 8px;
@@ -347,14 +347,15 @@ background-color: black;
         width: 80%;
     }
     .footer{
-      height: 60px;
-    
-  }
-    .footer p{
-        font-size: 10px;
-        margin: 5px;
-    
+      height: auto;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
     }
+  .footer p{
+    font-size: 10px;
+    margin-bottom: 5px;
+
+}
     .vagas h1 { 
       font-size: 25px;
     }
