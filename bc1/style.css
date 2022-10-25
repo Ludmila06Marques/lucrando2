@@ -315,6 +315,9 @@ flex-direction:  column;
         margin-bottom: 100px;
        
     }
+    .botao-pulse-vagas{
+        padding: 20px 18px;
+    }
     .video{
       width: 90%;
       height: 175px;
@@ -324,7 +327,7 @@ flex-direction:  column;
         margin: 0;
         margin-bottom: 100px;
     }
-    .box-pulse {
+    .box-pulse-vagas {
         width: 80%;
     }
     .footer p{
