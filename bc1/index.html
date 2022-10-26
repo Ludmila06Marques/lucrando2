@@ -69,26 +69,35 @@
 <script>
 
 function countTo(){
-    let from = 60;
-    let to = 7;
-    let step = to > from ? 1 : -1;
-    let interval = 20;
-
-    if(from == to){
-        document.querySelector(".counter").textContent = from;
-        return;
+        let from = 60;
+        let to = 7;
+        let step = to > from ? 1 : -1;
+        let interval = 20;
+    
+        if(from == to){
+            document.querySelector(".counter").textContent = from;
+            return;
+        }
+    
+        let counter = setInterval(function(){
+            from += step;
+            document.querySelector(".counter").textContent = from;
+    
+            if(from == to){
+                clearInterval(counter);
+            }
+        }, interval);
     }
 
-    let counter = setInterval(function(){
-        from += step;
-        document.querySelector(".counter").textContent = from;
+    const observer = new IntersectionObserver((entries) => { 
+    entries.forEach((entry) => {
+        console.log(entry.target);
+        countTo()
+    })
+}); 
 
-        if(from == to){
-            clearInterval(counter);
-        }
-    }, interval);
-}
-countTo()
+observer.observe(document.querySelector('.vagas'));
+
 
 </script>
 </html>
